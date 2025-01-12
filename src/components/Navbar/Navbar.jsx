@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div className="sticky z-50 flex flex-col items-center justify-center w-full bg-white border-b-2 border-gray-800">
-      <div className="w-full h-5 bg-blue-500"></div>
+    <div className="sticky top-0 z-50 flex flex-col items-center justify-center w-full bg-white border-b-2 border-gray-800">
+      <div className="hidden w-full h-5 bg-blue-500 md:block"></div>
       <div className="flex items-center justify-between w-full px-10 py-4 bg-white ">
         <div>
           <Link to="/">

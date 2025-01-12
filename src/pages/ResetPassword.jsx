@@ -45,7 +45,7 @@ const ResetPassword = () => {
 
   return (
     <div className="flex fixed w-full items-center justify-center min-h-screen bg-gradient-to-br from-[#5DE0E6] to-[#004AAD]">
-      <div className="hidden w-1/2 md:block">
+      <div className="hidden w-1/2 lg:block">
         <img
           src={resetPassword}
           alt="Reset Password"
@@ -58,18 +58,14 @@ const ResetPassword = () => {
           className="absolute h-40 -bottom-16 left-1/3"
         />
       </div>
-      <div className="w-full max-w-md p-8 space-y-6 bg-black/25 rounded-lg shadow-md md:h-[600px] h-[764px]">
+      <div className="w-full max-w-md p-8 mx-2 space-y-6 rounded-lg shadow-md bg-black/25">
         <div className="mb-10">
           <Link to="/">
-            <FaArrowLeft className="p-1 mb-2 bg-white rounded-full w-7 h7" />
+            <FaArrowLeft className="p-1 mb-2 bg-white rounded-full w-7 h-7" />
           </Link>
           <h2 className="text-3xl font-bold text-white">Reset Password</h2>
           <span className="text-white">Enter your email and new password</span>
-          {error && (
-            <div className="absolute px-2 py-1 font-bold text-red-500 rounded-md bg-slate-100 ">
-              {error}
-            </div>
-          )}
+          {error && <div className="absolute text-red-500 ">{error}</div>}
         </div>
         <form
           className="flex flex-col justify-between h-[355px]"

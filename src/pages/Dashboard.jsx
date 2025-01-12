@@ -9,10 +9,10 @@ import { Link } from "react-router-dom";
 
 export default function Dashboard() {
   return (
-    <div className="fixed flex flex-col items-center justify-between min-h-screen bg-white">
+    <div className="flex flex-col items-center justify-between min-h-screen bg-white md:fixed">
       <Navbar />
       <div className="flex flex-col items-center justify-center">
-        <div>
+        <div className="hidden md:block ">
           <img
             src={pagar}
             alt="Pagar"
@@ -39,7 +39,7 @@ export default function Dashboard() {
             className="absolute right-0 w-64 bottom-5"
           />
         </div>
-        <div className="w-1/3 space-y-8 text-center ">
+        <div className="p-2 space-y-8 text-center lg:w-1/3 md:w-1/2 md:p-0 ">
           <div className="flex flex-col items-center justify-center space-y-4">
             <img
               src={profileImage}
